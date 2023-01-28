@@ -1,10 +1,10 @@
 @Import Url("Https://Fonts.Googleapis.Com/Css?Family=Rajdhani:300&Display=Swap");
 
-Body,
-Html {
-    Height: 100%;
-    Margin: 0;
-    Padding: 0;
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 Body {
@@ -68,7 +68,7 @@ Body {
 }
 
 @Media (max-width: 980px) {
-    .Glass {
+    .glass {
         clip-path: Inset(5em);
     }
 
