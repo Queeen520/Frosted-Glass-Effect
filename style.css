@@ -8,8 +8,8 @@ html {
 }
 
 Body {
-    Display: Flex;
-    Justify-Content: Center;
+    display: Flex;
+    justify-content: Center;
     Align-Items: Center;
     Background-Image: Url("Https://S3-Us-West-2.Amazonaws.Com/S.Cdpn.Io/1376484/Jess-Harding-LqT6NAmTaiY-Unsplash.Jpg");
     Background-Size: Cover;
