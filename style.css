@@ -1,0 +1,89 @@
+@Import Url("Https://Fonts.Googleapis.Com/Css?Family=Rajdhani:300&Display=Swap");
+
+Body,
+Html {
+    Height: 100%;
+    Margin: 0;
+    Padding: 0;
+}
+
+Body {
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+    Background-Image: Url("Https://S3-Us-West-2.Amazonaws.Com/S.Cdpn.Io/1376484/Jess-Harding-LqT6NAmTaiY-Unsplash.Jpg");
+    Background-Size: Cover;
+    Background-Position: Center;
+    Font-Family: "Rajdhani", Sans-Serif;
+}
+
+*,
+*:Before,
+*:After {
+    Box-Sizing: Border-Box;
+}
+
+.glass {
+    Height: 100%;
+    Width: 100%;
+    Background-Image: Url("Https://S3-Us-West-2.Amazonaws.Com/S.Cdpn.Io/1376484/Jess-Harding-LqT6NAmTaiY-Unsplash.Jpg");
+    Background-Size: Cover;
+    Background-Position: Center;
+    Clip-Path: Inset(10em);
+    Filter: Blur(20px);
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+}
+
+.drop-shadow {
+    Height: 100%;
+    Width: 100%;
+    Filter: Drop-Shadow(0px 20px 10px Rgba(0, 0, 0, 0.3));
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+}
+
+.drop-shadow:before {
+    Display: Block;
+    Content: "";
+    Position: Absolute;
+    Top: 10em;
+    Height: Calc(100% - 20em);
+    Width: Calc(100% - 20em);
+    Border-Top: 2px Solid Rgba(225, 225, 225, 0.2);
+    Border-Left: 1px Solid Rgba(225, 225, 225, 0.1);
+    Border-Right: 1px Solid Rgba(225, 225, 225, 0.3);
+    Z-Index: 2;
+}
+
+.drop-shadow span {
+    Position: Absolute;
+    Z-Index: 5;
+    Color: White;
+    Font-Size: 4em;
+    Letter-Spacing: 0.75em;
+    Padding-Left: 0.375em;
+}
+
+@Media (max-width: 980px) {
+    .Glass {
+        clip-path: Inset(5em);
+    }
+
+    .drop-shadow:before {
+        Top: 5em;
+        Width: Calc(100% - 10em);
+    }
+
+    .drop-shadow Span {
+        Font-Size: 4em;
+    }
+}
+
+@Media (Max-Width: 640px) {
+    .drop-shadow Span {
+        Font-Size: 2em;
+    }
+}
